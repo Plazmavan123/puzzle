@@ -7,30 +7,30 @@ const Item = () => {
   const riddles = [
     {
       id: 1,
-      description: "What has to be broken before you can use it?",
-      option1: "An egg",
-      option2: "A pencil",
-      option3: "A mirror",
-      option4: "A window",
-      correct: "An egg"
+      description: "Под землёй туда-сюда быстро ездят поезда.",
+      option1: " Метро",
+      option2: "Велосипед",
+      option3: "Скутер",
+      option4: "Машина",
+      correct: "Метро"
     },
     {
       id: 2,
-      description: "I'm tall when I'm young, and I'm short when I'm old. What am I?",
-      option1: "A tree",
-      option2: "A candle",
-      option3: "A book",
-      option4: "A bottle",
-      correct: "A candle"
+      description: "Резвый конь не ест овса, у него два колеса.",
+      option1: "Машина",
+      option2: "Велосипед",
+      option3: "Метро",
+      option4: "Кирпич",
+      correct: "Велосипед"
     },
     {
       id: 3,
-      description: "What has keys but can't open locks?",
-      option1: "A computer",
-      option2: "A piano",
-      option3: "A map",
-      option4: "A clock",
-      correct: "A map"
+      description: "Крылья есть, а всё ж не птица, он по небу быстро мчится.",
+      option1: "Птица",
+      option2: "Велосипед",
+      option3: "Самолёт",
+      option4: "Часы",
+      correct: "Самолёт"
     }
    
   ];
@@ -39,9 +39,9 @@ const Item = () => {
       <div>
       {riddles.map((riddle) =>(
         <div>
-        <h3>Riddle №{riddle.id}. {riddle.description}</h3>
+        <h3>Загадка №{riddle.id}. {riddle.description}</h3>
        
-        <label htmlFor='answers'>Choose the correct answer </label>
+        <label htmlFor='answers'>Выберите правильный ответ </label>
           <select id='answers'>
             <option>...</option>
             <option>{riddle.option1}</option>
@@ -52,7 +52,7 @@ const Item = () => {
 
           </select>
             
-          <p>Correct answer is: {riddle.correct}</p>
+          <p>Правильный ответ: {riddle.correct}</p>
 
         </div>
         
